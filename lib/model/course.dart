@@ -20,7 +20,10 @@ class Course {
         description = json['attributes']['description_plain_text'] as String,
         artworkUrl = json['attributes']['card_artwork_url'] as String,
         difficulty = 'difficulty',
-        // difficulty = json['attributes']['difficulty'] as String,
+
+        //TODO #1 difficulty has null value, cant store as String, line 26
+
+        // difficulty = json['attributes']['difficulty'] as String,s
         contributors = json['attributes']['contributor_string'] as String,
         domains = [] {
     final domainData =
